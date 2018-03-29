@@ -27,15 +27,16 @@ public class GuestionToHtml extends HttpServlet{
     }
     private void initTest(){
     	al=new ArrayList<Topic>();
-    	sqt=new SetAQuestion(1);
+    	sqt=new SetAQuestion(4);
     }
     
     private String toJson(){
     	al=sqt.getQuestion();
-    	String JSON="";
-    	for(int i=0;i<al.size();i++){
-    		JSON="{\"question\":\"hello\",\"answer\":\"ok\"}";
+    	String JSON="{\"topic0\":"+"\""+al.get(0).getTopic()+"\",\"result0\":"+"\""+al.get(0).getResult()+"\"";
+    	for(int i=1;i<al.size();i++){
+    		JSON=JSON+",\"topic"+i+"\":\""+al.get(i).getTopic()+"\",\"result"+i+"\":\""+al.get(0).getResult()+"\"";
     	}
+    	JSON=JSON+"}";
     	return JSON;
     }
 }

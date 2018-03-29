@@ -18,6 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <a href="#" id="button" onclick="getQuestion()">请点击这里即可查看</a>
-    <p id="error"></p>
+    <p id="question"></p>
+    <p id="answer"></p>
   </body>
 </html>
