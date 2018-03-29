@@ -3,15 +3,13 @@ function getQuestion(){
 	alert("准备开始");
 	$.ajax({
 		type:"GET",
-		url:"servlet/GuestionToHtml",
+		url:"GuestionToHtml",
 		datatype:"text/json",
 		success:function(result){
-			alert("请求成功");
-			i=1;
+			alert(result.question);
 		},
 		error:function(result){
-			alert(result);
-			i=0;
+			alert("服务器出现异常");
 		}
 	});
 }

@@ -18,8 +18,8 @@ public class GuestionToHtml extends HttpServlet{
         //设置返回文本的类型
         response.setContentType("text/json");
         initTest();
-        String jsonString = "{\"user\":{\"name\":\"lf\",\"address\":{\"province\":\"广东\",\"city\":\"深圳\"}}}";
-//        String jsonString=toJson();
+//        String jsonString = "{\"user\":{\"name\":\"lf\",\"address\":{\"province\":\"广东\",\"city\":\"深圳\"}}}";
+        String jsonString=toJson();
         System.out.println(jsonString);
         response.getWriter().print(jsonString);
                 
