@@ -16,13 +16,13 @@ public class SetAQuestion {
 	}
 	
 	
-	public void init(){
+	private void init(){
 		grd=new GetRandomDigit();
 		al=new ArrayList<Topic>();
 		ar=new ArithmeticResult();
 	}
 	
-	public void setQuestion(){
+	private void setQuestion(){
 		//出题的数量
 		int[] questionTopic;;
 		int[] questionOprator;
@@ -66,7 +66,7 @@ public class SetAQuestion {
 		}
 	}
 	
-	String getType(int type){
+	private String getType(int type){
 		if(type==1){
 			return "+";
 		}else if(type==2){
@@ -78,12 +78,16 @@ public class SetAQuestion {
 		}
 	}
 	
-	boolean PQ(){
+	private boolean PQ(){
 		int PQ=grd.probabilityQuestion();
 		if(PQ<=120){
 			return true;
 		}else{
 			return false;
 		}
+	}
+	
+	public ArrayList<Topic> getQuestion(){
+		return al;
 	}
 }
