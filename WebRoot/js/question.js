@@ -1,6 +1,5 @@
 function getQuestion(){
 	var i=2;
-	alert("准备开始");
 	$.ajax({
 		type:"GET",
 		url:"GuestionToHtml",
