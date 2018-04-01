@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" 
-	xmlns="http://java.sun.com/xml/ns/javaee" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
   <welcome-file-list>
     <welcome-file>question.jsp</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
   </welcome-file-list>
+  
+  
 
   <servlet>
     <servlet-name>GuestionToHtml</servlet-name>
     <servlet-class>com.arithmetic.question.GuestionToHtml</servlet-class>
   </servlet>
-  
+  <servlet>
+    <servlet-name>Logined</servlet-name>
+    <servlet-class>com.arithmetic.sql.Logined</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>GuestionToHtml</servlet-name>
     <url-pattern>/GuestionToHtml</url-pattern>
   </servlet-mapping>
-
+  <servlet-mapping>
+    <servlet-name>Logined</servlet-name>
+    <url-pattern>/Logined</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.html</location>
+  </error-page>
 </web-app>

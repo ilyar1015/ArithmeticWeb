@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class LinkSql {
 
 	//登陆本地数据库
-	private static final String url = "jdbc:mysql://127.0.0.1:3306/db_student";   
+	private static final String url = "jdbc:mysql://127.0.0.1:3306/arithmetic";   
 	private  static final String user = "root";  
 	private  static final String password = "root";
 	
