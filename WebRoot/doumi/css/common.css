@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.width100{
+	width: 100%;
+}
+.width90{
+	width: 90%;
+}
+.width80{
+	width: 80%;
+}
+.width70{
+	width: 70%;
+}
+.width60{
+	width: 60%;
+}
+.width50{
+	width: 50%;
+}
+.width40{
+	width: 40%;
+}
+.width1200{
+	width:1200px;
+}
+.width1000{
+	width: 1000px;
+}
+.width900{
+	width:900px;
+}
+.width800{
+	width: 800px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float: right;
+}
+.ma{
+	margin: auto;
+}
+.mr{
+	margin:right; 
+}
+.mt20{
+	margin-top: 20px;
+}
+.ml{
+	margin-left: 
+}
+.tc{
+	text-align: center;
+}
