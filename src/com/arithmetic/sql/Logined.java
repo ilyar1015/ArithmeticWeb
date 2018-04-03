@@ -33,6 +33,8 @@ public class Logined extends HttpServlet {
         }else{
         	jsonString="{\"massage\":false}";
         }
+//        String jsonString = "{\"user\":{\"name\":\"lf\",\"address\":{\"province\":\"¹ã¶«\",\"city\":\"ÉîÛÚ\"}}}";
+//        String jsonString=toJson();
         System.out.println(jsonString);
         response.getWriter().print(jsonString);
                 
