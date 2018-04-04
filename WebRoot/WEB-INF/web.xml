@@ -18,6 +18,10 @@
     <servlet-name>Logined</servlet-name>
     <servlet-class>com.arithmetic.sql.Logined</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.arithmetic.sql.Register</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>GuestionToHtml</servlet-name>
@@ -26,6 +30,10 @@
   <servlet-mapping>
     <servlet-name>Logined</servlet-name>
     <url-pattern>/Logined</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
   </servlet-mapping>
   
   
