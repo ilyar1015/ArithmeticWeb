@@ -1,132 +1,546 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>【四则运算】</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
-<body>
-	<div class="nav width100">
-		<div class="nav_t width1200 ma">
-			<P>四则运算</P>
-		</div>
-	</div>
-	<div style="clear: both;"></div>
-	<div class="connect width100">
-		<div class="fl but">
-			<div class="but-a">
-				<div class="but-b">
-					
-				</div>
-				<div class="but-b">
-					
-				</div>
-			 	<div id="login_click" class="but-b" >  
-        			
-        		</div>  
-			</div>
-		</div>	
-		<div class="fl but-r">
-			<div class="but-r-t">
-				<div class="but-r-l">
-					<ul>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-					</ul>
-				</div>
-				<div class="but-r-r">
-					<ul>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-						<li>
-							<div class="fl text">shuchchchutimu</div>
-							<div class="fl number"><input type="text" name="daan"></div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="fl but">
-			
-		</div>
-	</div>
-	<div class="footer width100">
-		<div class="footer-t width80 ma">
-			
-		</div>
-	</div>
-</body>
+    <head>
+        <title>
+            【小学四则运算】
+        </title>
+        <meta charset="utf-8">
+        <!--CSS-->
+        
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <!--Google Fonts-->
+        <link rel="stylesheet" type="text/css" href="js/Playfail.js">
+        <link href="js/Josefin.js" rel="stylesheet">
+        <script type="text/javascript" src="js/highcharts.js"></script>
+        <script type="text/javascript" src="js/trellis.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+       <header class="header" id="HOME">
+                 <!-- Navigation -->
+            
+            <nav class="navbar navbar-default navbar-fixed-top">
+              
+                
+                <div class="container">
+                  
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+</nav>
+           <div class="header-overlay">
+               <div class="container">
+                   <div class="row">
+                    <div class="col-md-12">
+                        <!--Logo-->
+                        <div class="logo text-center">
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-8 wow bounceIn">
+                        <div class="header-text">
+                            <h1>小学四则运算</h1>
+                            <p>由计算机从题库文件中随机选择20道加减乘除混合算式，用户输入算式答案，程序检查答案是否正确，每道题正确计5分，错误不计分，20道题测试结束后给出测试总分</p>
+                        </div>
+                        <div class="header-btns">
+                          <a href="#about">
+                              <i class="fa fa-angle-down wow bounceInUp"></i>
+                          </a>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                       <div class="header-col">
+                        
+                         <form role="form" class="header-form">
+                            <h2>用户登录</h2>
+                             <div class="form-group">
+                                 <input type="text" placeholder="姓名" class="form-control input-3x">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" placeholder="学号" class="form-control input-3x">
+                             </div>
+                             <div class="form-group">
+                                 <input type="password" placeholder="密码" class="form-control input-3x">
+                             </div>
+                             <div class="form-group">
+                                 <button type="submit" class="btn btn-primary btn-3x">Go <span> <i class="fa fa-angle-double-right"></i> </span></button>
+                             </div>
+                         </form>
+                       </div>
+                        
+                    </div>
+                </div>
+                </div>
+                   <div class="row"></div>
+               </div>
+           </div>
+       </header>
+       <!--Section About-->
+       <section id="about">
+          
+           <div class="section-about">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12 wow bounceIn">
+                          <h2 class="section-title">测试题</h2>
+                          <p>请选择答题数：</p>
+                          <select multiple class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                          </select>
+                          <div class="form-group fr">
+                                 <button type="submit" class="btn btn-primary btn-3x  col-md-2" style=" float: right;">Go <span> <i class="fa fa-angle-double-right"></i> </span></button>
+                             </div>
+                      </div>
+                  </div>
+              </div>
+               <div class="section-wrapper">
+                   <div class="container">
+               <div class="row">
+                   <div class="col-md-12 wow bounceInDown">
+                       <ul class="list-group">
+                        <!-- 第一行 -->
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <!-- 第二行 -->
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="list-group-item col-md-6 fl" style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item col-md-6 fr " style="height: 50px;">
+                             <div class="form-group fl">
+                              <label for="inputEmail3" class="col-sm-4 control-label" style="margin-top: 5px;">EmailEmailEmail</label>
+                              <div class="col-sm-1">
+                                <input type="number" style="width: 100px;" class="form-control" id="inputEmail3" placeholder="答案">
+                              </div>
+                            </div>
+                          </li>
+                      </ul>
+                   </div>
+
+               </div>
+           </div>
+               </div>
+           </div>
+           
+       </section><!--end of about section-->
+       <div class="copyrights"></div>
+       <!--Performers Section-->
+       <section class="performer-section" id="performers">
+           <div class="performer wow flipInY">
+            <div class="performer-overlay" style="height: 534px;">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-12">
+
+                                <h2 class="section-title">结果统计</h2>
+
+                              </div>
+                          </div>
+                          
+                      </div>
+                        <div id="container" style="width: 600px;height:400px;margin: auto;"></div>
+                      <!-- 引入 highcharts.js -->
+                      <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+                      <script>
+                          // 图表配置
+                          var options = {
+                              chart: {
+                                  type: 'bar'                          //指定图表的类型，默认是折线图（line）
+                              },
+                              title: {
+                                  text: '统计图表'                 // 标题
+                              },
+                              xAxis: {
+                                  categories: ['李国栋', '伊利亚', '果冻']   // x 轴分类
+                              },
+                              yAxis: {
+                                  title: {
+                                      text: '答题轮数'                // y 轴标题
+                                  }
+                              },
+                              series: [{                              // 数据列
+                                  name: '正确',                        // 数据列名
+                                  data: [1, 0, 4]                     // 数据
+                              }, {
+                                  name: '错误',
+                                  data: [5, 7, 3]
+                              }]
+                          };
+                          // 图表初始化函数
+                          var chart = Highcharts.chart('container', options);
+                      </script>
+                                        
+               </div>
+               </div>
+       </section><!--End of Performers-->
+     <!--   <section class="why-us" id="timeline">
+            <div class="section-timeline">
+                <div class="container">
+                    <h2 class="heading">Our<span class="bold-green"> Timeline</span></h2>
+                    <p class="lead under-heading text-center">Look at our timer</p>
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge"><span class="counteryear">2016</span></div>
+                            <div class="timeline-panal wow bounceIn">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">4500 Tours <span class="blue-underline"> Done</span> </h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter </small></p>
+                                </div>
+                                <div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam fugiat excepturi neque est modi ex dolores eaque esse optio commodi, animi similique ut iure nesciunt consectetur sed eos ad.</p></div>
+                            </div> --><!--end of timeline panel-->
+                        <!-- </li>
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge"><span class="counteryear">2015</span></div>
+                            <div class="timeline-panal  wow bounceIn">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title"><span class="blue-underline">100,000</span> Tours Completed</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 hours ago via Twitter </small></p>
+                                </div>
+                                <div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam fugiat excepturi neque est modi ex dolores eaque esse optio commodi, animi similique ut iure nesciunt consectetur sed eos ad.</p></div>
+                            </div> --><!--end of timeline panel-->
+                        <!-- </li>
+                        
+                        <li>
+                            <div class="timeline-badge"><span class="counteryear">2014</span></div>
+                            <div class="timeline-panal wow bounceIn">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title"><span class="blue-underline">3.9</span> Performance Rate</h4>
+                                    <p><small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 hours ago via Twitter </small></p>
+                                </div>
+                                <div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam fugiat excepturi neque est modi ex dolores eaque esse optio commodi, animi similique ut iure nesciunt consectetur sed eos ad.</p></div>
+                            </div> --><!--end of timeline panel-->
+                  <!--       </li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </section> --><!--end of timeline-->
+       <!--  <section id="numbers">
+            <div class="numbers-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-title">Biking Counter</h2>
+                            <p class="under-heading">Review our Numbers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="num-data block-inline">
+                                    <i class="fa fa-flag fa-5x"></i>
+                                    <div class="counter">34,653</div>
+                                    <p>Tours Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="num-data block-inline">
+                                    <i class="fa fa-database fa-5x"></i>
+                                    <div class="counter">354</div>
+                                    <p>Performer Cards</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="num-data block-inline">
+                                    <i class="fa fa-bicycle fa-5x"></i>
+                                    <div class="counter">64366</div>
+                                    <p>Included Bikes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="num-data block-inline">
+                                    <i class="fa fa-life-ring fa-5x"></i>
+                                    <div class="counter">1452</div>
+                                    <p>Supports Tickets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="contact-us">
+            <div class="contact-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 wow bounceInDown">
+                            <h2 class="section-title">学生注册</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-wrapper">
+                    <div class="container">
+                        <form role="form">
+                            <div class="row">
+                            <div class="col-md-6 wow bounceInLeft">
+                                
+                                    <div class="form-group">
+                                        <input type="text" placeholder="姓名" class="form-control input-lg">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="学号" class="form-control input-lg">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="密码" class="form-control input-lg">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="确认密码" class="form-control input-lg">
+                                    </div>
+                                
+                            </div>
+                            <div class="col-md-6 wow bounceInRight">
+                               <div class="form-group">
+                                <textarea placeholder="" class="form-control "></textarea>
+                               </div>
+                               <button class="btn btn-primary btn-block input-lg">咻咻咻Duang</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="social-icons wow slideInDown">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            
+                        </div>
+                        <div class="col-md-4">
+                          
+                        </div>
+                        <div class="col-md-4">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="loading-overlay">
+       <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+       </div>
+       </section>
+       
+       
+       
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+    </body>
 </html>
